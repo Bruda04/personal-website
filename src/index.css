@@ -1,1 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 @import "tailwindcss";
+
+
+@theme {
+  --font-sans: "Sansation", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #DCF763;
+  --color-secondary: #a5a5a5;
+  --color-background: #202020;
+  --color-text: #E5E5E5;
+}
+
+@utility custom-glow {
+  box-shadow: 0 0 15px color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
