@@ -3,6 +3,7 @@ export const SITE_CONTENT = {
     roles: [
       "building robust and scalable backend systems.",
       "tech enthusiast and lifelong learner.",
+      "enjoying competing in hackathons.",
       "exploring the depths of software architecture.",
       "a Software Engineering student at FTN.",
       "obsessed with clean, maintainable, and fast code.",

@@ -9,8 +9,8 @@ const TechStack = () => {
       <div className="absolute inset-0 z-10 pointer-events-none bg-linear-to-r from-background via-transparent to-background opacity-100" />
 
       <motion.div
-        animate={{ x: [0, -1000] }}
-        transition={{ repeat: Infinity, ease: "linear", duration: 17 }}
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{ repeat: Infinity, ease: "linear", duration: 140 }}
         className="flex gap-16 pr-16 text-5xl md:text-7xl font-black opacity-10 uppercase tracking-tighter"
       >
         {[...technologies, ...technologies].map((tech, index) => (
