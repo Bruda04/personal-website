@@ -32,6 +32,7 @@ const ProjectCard = ({ project }: ProjectProps) => {
         <img
           src={project.image}
           alt={project.title}
+          loading="lazy"
           className="w-full h-full object-fit object-top transition-opacity duration-500 opacity-90 group-hover:opacity-100"
         />
 
