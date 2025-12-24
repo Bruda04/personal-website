@@ -15,7 +15,7 @@ const TypingRoles = () => {
           cursor
           cursorStyle="_"
           cursorBlinking={true}
-          typeSpeed={70}
+          typeSpeed={65}
           deleteSpeed={30}
           delaySpeed={2500}
         />

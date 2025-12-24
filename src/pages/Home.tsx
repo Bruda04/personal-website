@@ -30,7 +30,7 @@ const Home = () => {
         transition={{ duration: 0.8 }}
         className="pb-20"
       >
-        <section className="py-10 flex flex-col md:flex-row justify-between items-start gap-12 border-b border-white/5">
+        <section className="py-10 flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="flex-1 flex flex-col items-center md:items-start w-full">
             <div className="mb-12">
               <StatusWidget />
@@ -58,7 +58,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="py-10 w-screen relative left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] border-b border-white/5">
+        <section className="py-10 w-screen relative left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] border-t border-b border-white/5">
           <TechStack />
         </section>
 
