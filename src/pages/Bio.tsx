@@ -75,12 +75,12 @@ const Bio = () => {
                 Known for excelling as both a team player and an independent
                 contributor. My academic foundation at{" "}
                 <a
-                  href="https://www.ftn.uns.ac.rs/"
+                  href="https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-bold decoration-primary/30 underline-offset-4"
                 >
-                  FTN Novi Sad
+                  Faculty of Technical Sciences
                 </a>{" "}
                 (GPA: 9.71/10) combined with hands-on development reflects my
                 ability to quickly grasp complex concepts.
@@ -114,7 +114,7 @@ const Bio = () => {
                     Software Engineering & Information Technologies
                   </h4>
                   <a
-                    href="https://www.ftn.uns.ac.rs/"
+                    href="https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs text-text/40 font-medium tracking-widest uppercase hover:text-text transition-colors w-fit border-b border-transparent hover:border-text/20 pb-0.5"

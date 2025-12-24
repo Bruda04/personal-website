@@ -1,14 +1,14 @@
 export const SITE_CONTENT = {
   hero: {
     roles: [
-      "building robust and scalable backend systems.",
       "tech enthusiast and lifelong learner.",
-      "enjoying competing in hackathons.",
-      "exploring the depths of software architecture.",
       "a Software Engineering student at FTN.",
-      "obsessed with clean, maintainable, and fast code.",
+      "enjoying competing in hackathons.",
+      "building robust and scalable backend systems.",
+      "a team player and effective communicator.",
+      "exploring the depths of software architecture.",
+      "focused on clean, maintainable, and fast code.",
       "turning complex logic into elegant applications.",
-      "team player and effective communicator.",
     ],
   },
 
@@ -30,7 +30,7 @@ export const SITE_CONTENT = {
     {
       period: "Oct 2022 — Present",
       role: "Software Engineering Student",
-      company: "FTN, University of Novi Sad",
+      company: "Faculty of Technical Sciences, University of Novi Sad",
       link: "https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/",
       active: true,
       details: ["GPA: 9.71/10"],
