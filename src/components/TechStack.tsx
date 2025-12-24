@@ -11,7 +11,7 @@ const TechStack = () => {
       <motion.div
         animate={{ x: ["0%", "-50%"] }}
         transition={{ repeat: Infinity, ease: "linear", duration: 140 }}
-        className="flex gap-16 pr-16 text-5xl md:text-7xl font-black opacity-10 uppercase tracking-tighter"
+        className="flex gap-16 pr-16 text-5xl md:text-7xl font-black opacity-15 uppercase tracking-tighter"
       >
         {[...technologies, ...technologies].map((tech, index) => (
           <span

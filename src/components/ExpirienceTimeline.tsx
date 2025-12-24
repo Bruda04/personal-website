@@ -47,17 +47,16 @@ const ExperienceTimeline = () => {
             )}
 
             {exp.details && exp.details.length > 0 && (
-              <ul className="mt-3 space-y-1.5">
+              <div className="mt-4 flex flex-wrap gap-2">
                 {exp.details.map((detail, i) => (
-                  <li
+                  <span
                     key={i}
-                    className="text-[11px] text-text/50 font-medium tracking-wide flex items-start gap-2 group-hover:text-text/70 transition-colors"
+                    className="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded text-[10px] font-black text-primary uppercase tracking-tighter italic transition-all duration-300 group-hover:bg-primary/20 group-hover:border-primary/40"
                   >
-                    <span className="text-primary mt-1 text-[8px]">•</span>
                     {detail}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             )}
           </div>
         </div>
