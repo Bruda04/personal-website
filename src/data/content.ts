@@ -12,12 +12,6 @@ export const SITE_CONTENT = {
     ],
   },
 
-  about: {
-    title: "Bio",
-    description:
-      "Full-stack developer focused on creating high-performance digital experiences...",
-  },
-
   experience: [
     {
       period: "Nov 2025 — Dec 2025",
@@ -39,33 +33,33 @@ export const SITE_CONTENT = {
 
   techStack: [
     "JavaScript",
+    "Spring Boot",
     "TypeScript",
+    "Java",
     "React",
     "Node.js",
-    "Java",
-    "MongoDB",
-    "Spring Boot",
-    "Tailwind",
-    "Docker",
+    "Angular",
+    "Cisco",
     "Git",
+    "React Native",
+    "Python",
     "AWS",
+    "Docker",
+    "Linux",
+    "C++",
+    "MongoDB",
+    "Tailwind",
     "PostgreSQL",
     "MySQL",
+    "System Administration",
     "HTML5",
     "CSS3",
     "Android",
     "Figma",
-    "C++",
-    "Python",
-    "Linux",
     "C#",
     "Delphi",
-    "Angular",
-    "React Native",
     "Selenium",
-    "Cisco",
     "Salesforce",
-    "System Administration",
     "Go",
   ],
 
