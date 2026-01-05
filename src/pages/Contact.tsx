@@ -10,7 +10,7 @@ const Contact = () => {
         name="description"
         content="Get in touch with Luka Bradić for collaborations or software engineering opportunities."
       />
-      <link rel="canonical" href="https://bradic.dev/#/contact" />
+      <link rel="canonical" href="https://bradic.dev/" />
       <div className="py-12 max-w-4xl mx-auto text-text">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
