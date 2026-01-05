@@ -13,7 +13,7 @@ const Home = () => {
         name="description"
         content="Welcome to Luka Bradic's personal website. Explore projects, experience, and technical skills."
       />
-      <link rel="canonical" href="https://bradic.dev/#/" />
+      <link rel="canonical" href="https://bradic.dev/" />
 
       <meta property="og:title" content="Luka Bradic" />
       <meta
@@ -21,7 +21,7 @@ const Home = () => {
         content="Welcome to Luka Bradic's personal website. Explore projects, experience, and technical skills."
       />
       <meta property="og:image" content="https://bradic.dev/og-preview.png" />
-      <meta property="og:url" content="https://bradic.dev/#/" />
+      <meta property="og:url" content="https://bradic.dev/" />
       <meta name="twitter:card" content="summary_large_image" />
 
       <motion.div

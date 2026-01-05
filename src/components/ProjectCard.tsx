@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { FiGithub, FiExternalLink, FiChevronDown } from "react-icons/fi";
 
 interface ProjectProps {
@@ -15,6 +15,33 @@ interface ProjectProps {
 
 const ProjectCard = ({ project }: ProjectProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const controls = useAnimation();
+
+  const flashVariants = {
+    initial: {
+      scale: 1,
+      backgroundColor: "rgba(220, 247, 99, 0.05)",
+    },
+    glow: {
+      scale: 1.15,
+      backgroundColor: "rgba(220, 247, 99, 0.4)",
+      transition: { duration: 0.2 },
+    },
+  };
+
+  const triggerFlash = async () => {
+    await controls.start("glow");
+    await controls.start("initial");
+  };
+
+  function handleTitleClick() {
+    if (project.link) {
+      window.open(project.link, "_blank", "noopener,noreferrer");
+    } else {
+      setIsExpanded(true);
+      triggerFlash();
+    }
+  }
 
   return (
     <motion.div
@@ -67,7 +94,8 @@ const ProjectCard = ({ project }: ProjectProps) => {
 
         <motion.h3
           layout
-          className="text-xl font-bold mb-2 group-hover:text-primary transition-colors italic tracking-tighter"
+          className="text-xl font-bold mb-2 group-hover:text-primary transition-colors italic tracking-tighter cursor-pointer"
+          onClick={handleTitleClick}
         >
           {project.title}
         </motion.h3>
@@ -104,16 +132,19 @@ const ProjectCard = ({ project }: ProjectProps) => {
             </span>
             <div className="flex flex-wrap gap-2">
               {project.repositories.map((git) => (
-                <a
+                <motion.a
                   key={git.url}
                   href={git.url}
+                  animate={controls}
+                  variants={flashVariants}
+                  initial="initial"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 px-2 py-1 bg-text/5 hover:bg-primary/20 border border-text/10 hover:border-primary/30 rounded text-[9px] font-bold text-text/60 hover:text-primary transition-all uppercase tracking-tighter"
+                  className="flex items-center gap-1.5 px-2 py-1 border border-text/10 hover:border-primary/30 rounded text-[9px] font-bold text-text/60 hover:text-primary transition-all uppercase tracking-tighter"
                 >
                   <FiGithub size={12} />
                   {git.label}
-                </a>
+                </motion.a>
               ))}
             </div>
           </motion.div>

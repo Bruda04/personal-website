@@ -8,7 +8,7 @@ const Bio = () => {
         name="description"
         content="Learn more about my technical journey, core philosophy, and the technologies I use."
       />
-      <link rel="canonical" href="https://bradic.dev/#/bio" />
+      <link rel="canonical" href="https://bradic.dev/" />
       <section className="py-24 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

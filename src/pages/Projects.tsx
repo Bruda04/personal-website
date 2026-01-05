@@ -51,7 +51,7 @@ const Projects = () => {
         name="description"
         content="Explore a curated selection of my software engineering projects, showcasing my skills."
       />
-      <link rel="canonical" href="https://bradic.dev/#/projects" />
+      <link rel="canonical" href="https://bradic.dev/" />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
