@@ -14,11 +14,11 @@ export const SITE_CONTENT = {
 
   experience: [
     {
-      period: "Nov 2025 — Dec 2025",
+      period: "Nov 2025 — Dec 2025; Mar 2026 — Present",
       role: "Salesforce Developer Intern",
       company: "BeeIT",
       link: "https://beeit.io/",
-      active: false,
+      active: true,
       details: [],
     },
     {
@@ -27,7 +27,7 @@ export const SITE_CONTENT = {
       company: "Faculty of Technical Sciences, University of Novi Sad",
       link: "https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/",
       active: true,
-      details: ["GPA: 9.71/10"],
+      details: ["GPA: 9.68/10"],
     },
   ],
 
@@ -61,6 +61,7 @@ export const SITE_CONTENT = {
     "Selenium",
     "Salesforce",
     "Go",
+    "Rust",
   ],
 
   projects: [
@@ -101,6 +102,92 @@ export const SITE_CONTENT = {
         },
       ],
       image: "img/nosql-database.webp",
+    },
+    {
+      title: "Smart Supply Chain Platform",
+      description:
+        "A modular, high-throughput platform designed for real-time supply chain optimization. The system leverages a robust infrastructure to handle low-latency telemetry data from a distributed network of vehicles, warehouses, and factories, providing comprehensive real-time status monitoring and operational insights.",
+      tags: [
+        "Angular",
+        "Go",
+        "Caddy",
+        "MinIO",
+        "InfluxDB",
+        "Redis",
+        "RabbitMQ",
+        "Locust",
+      ],
+      link: null,
+      repositories: [
+        {
+          label: "Repository",
+          url: "https://github.com/Bruda04/smart-supply-chain-platform",
+        },
+      ],
+      image: "img/smart-supply-chain-platform.webp",
+    },
+    {
+      title: "Smart Home IoT System",
+      description:
+        "A distributed IoT platform built for end-to-end home automation and environmental monitoring. The system orchestrates multiple Raspberry Pi nodes as active sensor/actuator hubs, utilizing an MQTT-based messaging backbone for low-latency communication. It features a professional telemetry stack with InfluxDB for time-series data persistence and Grafana for real-time operational dashboards.",
+      tags: [
+        "Raspberry Pi",
+        "Flask",
+        "Mosquitto",
+        "InfluxDB",
+        "Grafana",
+        "Electronics",
+        "IoT",
+      ],
+      link: null,
+      repositories: [
+        {
+          label: "Repository",
+          url: "https://github.com/Bruda04/smart-home-IoT",
+        },
+      ],
+      image: "img/smart-home-iotsystem.webp",
+    },
+    {
+      title: "HPC Mandelbrot",
+      description:
+        "This project explores the generation of the Mandelbrot set using both sequential and parallel implementations in Python and Rust. It focuses on performance benchmarking, visual artifact generation, and final visualization of results.",
+      tags: [
+        "Rust",
+        "Python",
+        "High-Performance Computing",
+        "Parallel Programming",
+      ],
+      link: null,
+      repositories: [
+        {
+          label: "Repository",
+          url: "https://github.com/Bruda04/hpc-mandelbrot",
+        },
+      ],
+      image: "img/hpc-mandelbrot.webp",
+    },
+    {
+      title: "Soft Computing",
+      description:
+        "A collection of Soft Computing projects implementing ANN-based OCR, Hough Transform object detection, and advanced image segmentation. The repository demonstrates end-to-end pipelines for character recognition and automated feature extraction using Python and OpenCV. Each exercise focuses on bridging raw pixel data with intelligent classification and real-time status monitoring.",
+      tags: [
+        "Python",
+        "OpenCV",
+        "ANN",
+        "Hough Transform",
+        "Image Processing",
+        "OCR",
+        "Computer Vision",
+      ],
+      link: null,
+      repositories: [
+        {
+          label: "Repository",
+          url: "https://github.com/Bruda04/soft-computing",
+        },
+      ],
+      image: "img/soft-computing.webp",
     },
     {
       title: "Music Cloud Platform",
