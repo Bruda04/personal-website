@@ -82,7 +82,7 @@ const Bio = () => {
                 >
                   Faculty of Technical Sciences
                 </a>{" "}
-                (GPA: 9.71/10) combined with hands-on development reflects my
+                (GPA: 9.68/10) combined with hands-on development reflects my
                 ability to quickly grasp complex concepts.
               </p>
             </div>
@@ -123,7 +123,7 @@ const Bio = () => {
                   </a>
                   <div className="mt-3">
                     <div className="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded text-[10px] font-black text-primary uppercase tracking-tighter italic">
-                      GPA: 9.71 / 10.0
+                      GPA: 9.68 / 10.0
                     </div>
                   </div>
                 </div>
