@@ -1,7 +1,7 @@
 export const SITE_CONTENT = {
   hero: {
     roles: [
-      "tech enthusiast and lifelong learner.",
+      "a tech enthusiast and lifelong learner.",
       "a Software Engineering student at FTN.",
       "enjoying competing in hackathons.",
       "building robust and scalable backend systems.",
@@ -14,11 +14,11 @@ export const SITE_CONTENT = {
 
   experience: [
     {
-      period: "Nov 2025 — Dec 2025; Mar 2026 — Present",
+      period: "Dec 2025 & April 2026",
       role: "Salesforce Developer Intern",
       company: "BeeIT",
       link: "https://beeit.io/",
-      active: true,
+      active: false,
       details: [],
     },
     {
