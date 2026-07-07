@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import TechStack from "../components/TechStack";
 import StatusWidget from "../components/Status";
 import ExperienceTimeline from "../components/ExpirienceTimeline";
