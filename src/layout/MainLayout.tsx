@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -13,7 +13,6 @@ const MainLayout = () => {
           backgroundSize: "40px 40px",
         }}
       ></div>
-      <div className="fixed inset-0 z-0 pointer-events-none opacity-[0.05] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
 
       <div className="relative z-10 flex flex-col min-h-screen w-full">
         <Navbar />
