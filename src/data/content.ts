@@ -27,7 +27,7 @@ export const SITE_CONTENT = {
       company: "Faculty of Technical Sciences, University of Novi Sad",
       link: "https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/",
       active: true,
-      details: ["GPA: 9.68/10"],
+      details: ["GPA: 9.71/10"],
     },
   ],
 
@@ -226,6 +226,26 @@ export const SITE_CONTENT = {
       image: "img/event-hopper.webp",
     },
     {
+      title: "F1 Virtual Race Engineer",
+      description:
+        "F1 Virtual Race Engineer is a knowledge-based system that combines rule engines, simulation inputs and services to provide race strategy, safety and performance recommendations.",
+      tags: [
+        "Drools",
+        "Java",
+        "React",
+        "Knowledge-Based Systems",
+        "Rule Engines",
+      ],
+      link: null,
+      repositories: [
+        {
+          label: "Repository",
+          url: "https://github.com/Bruda04/f1-virtual-race-engineer",
+        },
+      ],
+      image: "/img/f1-virtual-race-engineer.webp",
+    },
+    {
       title: "License Plate Detection",
       description:
         "AI-powered vehicle identification system. Utilizes YOLO models for real-time detection and a combination of PaddleOCR and Tesseract for precise text recognition.",
@@ -256,7 +276,7 @@ export const SITE_CONTENT = {
     {
       title: "PKI Platform",
       description:
-        "Enterprise-grade Public Key Infrastructure for certificate management. Features Keycloak integration for Auth, custom password policies, and a secure Spring Boot backend.",
+        "Enterprise-grade Public Key Infrastructure for certificate management. Features Keycloak integration, access policy controls, and a secure Spring Boot backend.",
       tags: ["Spring Boot", "Java", "Angular", "Keycloak", "PostgreSQL"],
       link: null,
       repositories: [
