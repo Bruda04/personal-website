@@ -1,8 +1,31 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 import { SiDevpost } from "react-icons/si";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const subject = `Message from ${formData.name} via bradic.dev`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      "",
+      formData.message,
+    ].join("\n");
+
+    window.location.href = `mailto:luka@bradic.dev?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <>
       <title>Luka Bradic | Contact</title>
@@ -78,11 +101,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <form
-              action="https://formspree.io/f/mlgrlonn"
-              method="POST"
-              className="space-y-5"
-            >
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label
                   htmlFor="name"
@@ -94,6 +113,13 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
+                  value={formData.name}
+                  onChange={(event) =>
+                    setFormData((current) => ({
+                      ...current,
+                      name: event.target.value,
+                    }))
+                  }
                   required
                   className="w-full bg-text/5 border border-secondary/20 rounded-sm px-4 py-3 text-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all placeholder:text-secondary/30"
                   placeholder="Your Name"
@@ -110,6 +136,13 @@ const Contact = () => {
                   type="email"
                   name="email"
                   id="email"
+                  value={formData.email}
+                  onChange={(event) =>
+                    setFormData((current) => ({
+                      ...current,
+                      email: event.target.value,
+                    }))
+                  }
                   required
                   className="w-full bg-text/5 border border-secondary/20 rounded-sm px-4 py-3 text-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all placeholder:text-secondary/30"
                   placeholder="name@example.com"
@@ -126,6 +159,13 @@ const Contact = () => {
                   name="message"
                   id="message"
                   rows={4}
+                  value={formData.message}
+                  onChange={(event) =>
+                    setFormData((current) => ({
+                      ...current,
+                      message: event.target.value,
+                    }))
+                  }
                   required
                   className="w-full bg-text/5 border border-secondary/20 rounded-sm px-4 py-3 text-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all placeholder:text-secondary/30 max-h-37.5 resize-none"
                   placeholder="How can I help you?"
