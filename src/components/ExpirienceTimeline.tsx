@@ -1,7 +1,19 @@
 import { SITE_CONTENT } from "../data/content";
 
-const ExperienceTimeline = () => {
-  const experiences = SITE_CONTENT.experience;
+type TimelineEntry = {
+  period: string;
+  role: string;
+  company: string;
+  link: string | null;
+  active: boolean;
+  details: string[];
+};
+
+const ExperienceTimeline = ({
+  experiences = SITE_CONTENT.experience,
+}: {
+  experiences?: TimelineEntry[];
+}) => {
 
   return (
     <div className="relative pl-8 space-y-16 flex flex-col items-start mx-auto md:mx-0 w-fit">

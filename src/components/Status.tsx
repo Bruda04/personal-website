@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SITE_CONTENT } from "../data/content";
 
 const StatusWidget = () => {
   const getBelgradeTime = () => {
@@ -38,7 +39,7 @@ const StatusWidget = () => {
           Local Time: <span className="text-secondary">{time} GMT+1</span>
         </p>
         <p>
-          Availability: <span className="text-primary">Open to Work</span>
+          Availability: <span className="text-primary">{SITE_CONTENT.availability}</span>
         </p>
       </div>
 
@@ -48,7 +49,7 @@ const StatusWidget = () => {
             key={i}
             className="h-1 w-2 bg-white/10 animate-pulse"
             style={{
-              opacity: Math.random(),
+              opacity: 0.25 + (i % 4) * 0.2,
               animationDelay: `${i * 0.1}s`,
             }}
           ></div>

@@ -1,8 +1,11 @@
 export const SITE_CONTENT = {
+  availability: "Occupied",
+
   hero: {
     roles: [
       "a tech enthusiast and lifelong learner.",
-      "a Software Engineering student at FTN.",
+      "a Software Engineer at Drenik ND.",
+      "a master’s student at FTN.",
       "enjoying competing in hackathons.",
       "building robust and scalable backend systems.",
       "a team player and effective communicator.",
@@ -14,6 +17,14 @@ export const SITE_CONTENT = {
 
   experience: [
     {
+      period: "Oct 2026 — Present",
+      role: "Software Engineer",
+      company: "Drenik ND",
+      link: "https://dreniknd.com/",
+      active: true,
+      details: [],
+    },
+    {
       period: "Dec 2025 & April 2026",
       role: "Salesforce Developer Intern",
       company: "BeeIT",
@@ -21,13 +32,35 @@ export const SITE_CONTENT = {
       active: false,
       details: [],
     },
+  ],
+
+  education: [
     {
-      period: "Oct 2022 — Present",
-      role: "Software Engineering Student",
+      period: "Oct 2026 — Present",
+      role: "Master’s Degree",
       company: "Faculty of Technical Sciences, University of Novi Sad",
       link: "https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/",
       active: true,
-      details: ["GPA: 9.71/10"],
+      details: ["Software Engineering & Information Technologies"],
+    },
+    {
+      period: "Oct 2022 — 2026",
+      role: "Bachelor’s Degree",
+      company: "Faculty of Technical Sciences, University of Novi Sad",
+      link: "https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/",
+      active: false,
+      details: [
+        "Software Engineering & Information Technologies",
+        "GPA: 9.71/10",
+      ],
+    },
+    {
+      period: "2018 — 2022",
+      role: "Network Administrator",
+      company: 'Electrical Engineering High School "Nikola Tesla", Belgrade',
+      link: "http://www.teslabg.edu.rs/",
+      active: false,
+      details: [],
     },
   ],
 
@@ -65,6 +98,29 @@ export const SITE_CONTENT = {
   ],
 
   projects: [
+    {
+      title: "RooMeet",
+      description:
+        "A full-stack platform for apartment discovery, roommate matching, chat, and tenancy management, developed collaboratively as my bachelor’s thesis. Designed and implemented the Spring Boot backend, including secure REST APIs, JWT authentication, preference-based matching, real-time messaging, and data persistence with caching and object storage.",
+      tags: [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Redis",
+        "WebSocket",
+        "MinIO",
+        "Docker",
+        "Nginx",
+      ],
+      link: null,
+      repositories: [
+        {
+          label: "Repository",
+          url: "https://github.com/Bruda04/roomeet",
+        },
+      ],
+      image: "/img/roomeet.webp",
+    },
     {
       title: "Feel The Beat",
       description:
@@ -113,6 +169,7 @@ export const SITE_CONTENT = {
         "Caddy",
         "MinIO",
         "InfluxDB",
+        "PostgreSQL",
         "Redis",
         "RabbitMQ",
         "Locust",

@@ -4,6 +4,7 @@ import TechStack from "../components/TechStack";
 import StatusWidget from "../components/Status";
 import ExperienceTimeline from "../components/ExpirienceTimeline";
 import TypingRoles from "../components/TypingRoles";
+import { SITE_CONTENT } from "../data/content";
 
 const Home = () => {
   return (
@@ -52,9 +53,16 @@ const Home = () => {
 
           <div className="w-full md:w-auto md:min-w-75 flex flex-col items-center md:items-start pt-4">
             <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-secondary/50 mb-10 md:pl-8">
-              Experience // Path
+              Experience & Education
             </h3>
-            <ExperienceTimeline />
+            <ExperienceTimeline
+              experiences={[
+                SITE_CONTENT.experience[0],
+                SITE_CONTENT.education[0],
+                SITE_CONTENT.experience[1],
+                SITE_CONTENT.education[1],
+              ]}
+            />
           </div>
         </section>
 
