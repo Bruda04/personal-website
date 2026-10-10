@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import ExperienceTimeline from "../components/ExpirienceTimeline";
+import { SITE_CONTENT } from "../data/content";
 
 const Bio = () => {
   return (
@@ -6,9 +8,9 @@ const Bio = () => {
       <title>Luka Bradic | Bio</title>
       <meta
         name="description"
-        content="Learn more about my technical journey, core philosophy, and the technologies I use."
+        content="Software Engineer at Drenik ND, FTN bachelor’s graduate, and current master’s student."
       />
-      <link rel="canonical" href="https://bradic.dev/" />
+      <link rel="canonical" href="https://bradic.dev/bio" />
       <section className="py-24 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +33,7 @@ const Bio = () => {
                 <span className="text-primary">Luka Bradic.</span>
               </h3>
               <p className="text-text/80 text-lg font-medium leading-relaxed max-w-sm">
-                Software engineering student dedicated to building{" "}
+                Software Engineer at Drenik ND dedicated to building{" "}
                 <span className="text-secondary italic">
                   impactful applications
                 </span>{" "}
@@ -95,65 +97,7 @@ const Bio = () => {
               <div className="h-px flex-1 bg-text/5"></div>
             </div>
 
-            {/* Education Timeline */}
-            <div className="relative ml-4 pl-8 space-y-12 flex flex-col items-start pt-8">
-              <div className="absolute left-0.75 top-11 bottom-6 w-px bg-linear-to-b from-primary via-white/10 to-transparent"></div>
-
-              {/* University */}
-              <div className="relative group flex flex-col items-start text-left w-full">
-                <div className="absolute -left-8.25 top-1.5 h-2.5 w-2.5 z-10">
-                  <div className="absolute inset-0 border border-primary bg-primary shadow-[0_0_10px_#DCF763] transition-all duration-300"></div>
-                  <span className="absolute inset-0 h-full w-full bg-primary animate-ping opacity-20"></span>
-                </div>
-
-                <div className="flex flex-col gap-1 w-full">
-                  <span className="text-[10px] font-bold text-primary tracking-[0.2em] uppercase">
-                    2022 — Present
-                  </span>
-                  <h4 className="text-xl font-bold text-text uppercase italic tracking-tighter leading-tight">
-                    Software Engineering & Information Technologies
-                  </h4>
-                  <a
-                    href="https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-text/40 font-medium tracking-widest uppercase hover:text-text transition-colors w-fit border-b border-transparent hover:border-text/20 pb-0.5"
-                  >
-                    @ Faculty of Technical Sciences, University of Novi Sad
-                  </a>
-                  <div className="mt-3">
-                    <div className="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded text-[10px] font-black text-primary uppercase tracking-tighter italic">
-                      GPA: 9.71 / 10.0
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* High School */}
-              <div className="relative group flex flex-col items-start text-left w-full opacity-70 hover:opacity-100 transition-opacity">
-                <div className="absolute -left-8.25 top-1.5 h-2.5 w-2.5 z-10">
-                  <div className="absolute inset-0 border border-text/20 bg-background group-hover:border-primary transition-all duration-300"></div>
-                </div>
-
-                <div className="flex flex-col gap-1 w-full">
-                  <span className="text-[10px] font-bold text-text/40 tracking-[0.2em] uppercase">
-                    2018 — 2022
-                  </span>
-                  <h4 className="text-lg font-bold text-text uppercase italic tracking-tighter leading-tight">
-                    Network Administrator
-                  </h4>
-                  <a
-                    href="http://www.teslabg.edu.rs/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-text/40 font-medium tracking-widest uppercase hover:text-text transition-colors w-fit border-b border-transparent hover:border-text/20 pb-0.5"
-                  >
-                    @ Electrical Engineering High School "Nikola Tesla",
-                    Belgrade
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ExperienceTimeline experiences={SITE_CONTENT.education} />
           </div>
         </motion.div>
       </section>

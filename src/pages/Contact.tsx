@@ -33,7 +33,7 @@ const Contact = () => {
         name="description"
         content="Get in touch with Luka Bradić for collaborations or software engineering opportunities."
       />
-      <link rel="canonical" href="https://bradic.dev/" />
+      <link rel="canonical" href="https://bradic.dev/contact" />
       <div className="py-12 max-w-4xl mx-auto text-text">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,8 +43,8 @@ const Contact = () => {
           <header className="mb-12 text-center">
             <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
             <p className="text-secondary text-lg">
-              Have an interesting project or just want to connect? Feel free to
-              drop me a message!
+              Want to connect or discuss technology? Feel free to drop me a
+              message!
             </p>
           </header>
 
